@@ -24,12 +24,12 @@ export default function WorksPage() {
     },
     {
       title: "comming soon...",
-      thumbnail: "https://github.com/user-attachments/assets/72cb6af4-da13-427c-ad58-3a49a8c52cf3",
+      thumbnail: "https://github.com/user-attachments/assets/1f3559fe-ca09-47ea-9871-366bf2a9843e",
       link: "https://example.com/project5",
     },
     {
       title: "comming soon...",
-      thumbnail: "https://github.com/user-attachments/assets/72cb6af4-da13-427c-ad58-3a49a8c52cf3",
+      thumbnail: "https://github.com/user-attachments/assets/1f3559fe-ca09-47ea-9871-366bf2a9843e",
       link: "https://example.com/project6",
     },
   ];
