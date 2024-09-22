@@ -13,7 +13,7 @@ const dot = DotGothic16({
 });
 
 export const metadata: Metadata = {
-  title: "DAI-DAI.folio",
+  title: "DAI.DAI.folio",
   description: "Portfolio | daidaiのポートフォリオサイト",
 };
 
@@ -25,10 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dot.variable} antialiased bg-black text-white font-dot`}>
-        {/* MatrixCode コンポーネントを背景として配置 */}
         <MatrixCode />
         <Header />
-        {/* 各ページのコンテンツを表示 */}
         <main className="relative z-10 flex justify-center items-center min-h-screen font-dot">{children}</main>
       </body>
     </html>

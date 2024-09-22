@@ -1,8 +1,20 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function ContactPage() {
   return (
     <div className="text-center">
-      <h1 className="text-4xl mb-4">Contact Me</h1>
-      <p>This is the contact page. Provide your contact information here.</p>
+      <div className="flex items-center gap-20">
+        <Link href={"https://twitter.com/___daidai__"}>
+          <Image src="/images/noise.gif" alt="x-logo-white" width={100} height={100} />
+        </Link>
+        <Link href={"https://twitter.com/___daidai__"}>
+          <Image src="/images/logo-white.png" alt="x-logo-white" width={100} height={100} />
+        </Link>
+        <Link href={"https://twitter.com/___daidai__"}>
+          <Image src="/images/logo-white.png" alt="x-logo-white" width={100} height={100} />
+        </Link>
+      </div>
     </div>
   );
 }

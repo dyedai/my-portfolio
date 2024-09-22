@@ -1,35 +1,36 @@
 "use client";
+import Image from "next/image";
 
 export default function WorksPage() {
   const projects = [
     {
       title: "スレッドアプリ",
-      thumbnail: "https://github.com/user-attachments/assets/aaea920f-bb56-461a-88d6-644a0bb73a53",
+      thumbnail: "/images/threads.png",
       link: "https://example.com/project1",
     },
     {
       title: "書籍レビューアプリ",
-      thumbnail: "https://github.com/user-attachments/assets/241e4d80-b032-4aa6-b53c-18b22a49c8db",
+      thumbnail: "/images/bookreview.png",
       link: "https://example.com/project2",
     },
     {
       title: "レシートバトルアプリ",
-      thumbnail: "https://github.com/user-attachments/assets/a0784ffb-62e0-4055-b4a0-d258807c5ea4",
+      thumbnail: "/images/receptBattle.png",
       link: "https://example.com/project3",
     },
     {
       title: "塾の予定管理アプリ",
-      thumbnail: "https://github.com/user-attachments/assets/a9c61104-cda7-4a32-9d30-b541acac3a34",
+      thumbnail: "/images/juku.png",
       link: "https://example.com/project4",
     },
     {
       title: "comming soon...",
-      thumbnail: "https://github.com/user-attachments/assets/1f3559fe-ca09-47ea-9871-366bf2a9843e",
+      thumbnail: "/images/noise.gif",
       link: "https://example.com/project5",
     },
     {
       title: "comming soon...",
-      thumbnail: "https://github.com/user-attachments/assets/1f3559fe-ca09-47ea-9871-366bf2a9843e",
+      thumbnail: "/images/noise.gif",
       link: "https://example.com/project6",
     },
   ];
@@ -41,9 +42,10 @@ export default function WorksPage() {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative group block overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-125 hover:z-100"
+          className="relative group block overflow-hidden transition-transform transform hover:scale-125 hover:z-100"
         >
-          <img src={project.thumbnail} alt={project.title} className="w-full h-60 object-cover" />
+          <Image src={project.thumbnail} alt={project.title} width={2400} height={1600} className="w-full h-60 object-cover" />
+          <p className="font-dot text-2xl mb-4">{project.title}</p>
         </a>
       ))}
     </div>
