@@ -12,9 +12,9 @@ const Header: React.FC = () => {
   };
   return (
     <nav className="relative top-0 left-0 w-full z-20">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="w-full flex flex-wrap items-center justify-between md:p-10">
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-5xl font-semibold whitespace-nowrap text-white">&apos;DAI.DAI.FORIO&apos;</span>
+          <span className="self-center text-3xl md:text-5xl font-semibold whitespace-nowrap text-white">&apos;DAI.DAI.FORIO&apos;</span>
         </Link>
         <button
           onClick={toggleMenu}
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           aria-expanded={isOpen}
         >
           <span className="sr-only">Open main menu</span>
-          <svg className="mt-5 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
             {["HOME", "WORKS", "PROFILE", "CONTACT", "):"].map((item) => (
               <li key={item}>
                 <AnimatedLink
-                  href={item === "HOME" ? "/" : `/${item.toLowerCase()}`}
+                  href={item === "):" ? "/secret" : item === "HOME" ? "/" : `/${item.toLowerCase()}`}
                   english={item}
                   japanese={item === "):" ? ":)" : item === "HOME" ? "ホーム" : item === "WORKS" ? "作品" : item === "PROFILE" ? "プロフィール" : "連絡先"}
                   className="c-txt line flex py-2 px-3 text-white transition duration-200"
