@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import MatrixCode from "./MatrixCode"; // MatrixCode をインポート
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,10 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
+        {/* MatrixCode コンポーネントを背景として配置 */}
+        <MatrixCode />
+        {/* 各ページのコンテンツを表示 */}
+        <main className="relative z-10 flex justify-center items-center min-h-screen">{children}</main>
       </body>
     </html>
   );
