@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import MatrixCode from "./MatrixCode"; // MatrixCode をインポート
+import { DotGothic16 } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+import "./globals.css";
+import MatrixCode from "./MatrixCode";
+
+const dot = DotGothic16({
+  display: "swap",
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-dot",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
+      <body className={`${dot.variable} antialiased bg-black text-white`}>
         {/* MatrixCode コンポーネントを背景として配置 */}
         <MatrixCode />
         {/* 各ページのコンテンツを表示 */}
