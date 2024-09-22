@@ -1,57 +1,49 @@
+"use client";
+
 export default function WorksPage() {
   const projects = [
     {
-      title: "プロジェクト1",
-      thumbnail: "/path/to/thumbnail1.jpg",
+      title: "スレッドアプリ",
+      thumbnail: "https://github.com/user-attachments/assets/aaea920f-bb56-461a-88d6-644a0bb73a53",
       link: "https://example.com/project1",
     },
     {
-      title: "プロジェクト2",
-      thumbnail: "/path/to/thumbnail2.jpg",
+      title: "書籍レビューアプリ",
+      thumbnail: "https://github.com/user-attachments/assets/241e4d80-b032-4aa6-b53c-18b22a49c8db",
       link: "https://example.com/project2",
     },
     {
-      title: "プロジェクト3",
-      thumbnail: "/path/to/thumbnail3.jpg",
+      title: "レシートバトルアプリ",
+      thumbnail: "https://github.com/user-attachments/assets/a0784ffb-62e0-4055-b4a0-d258807c5ea4",
       link: "https://example.com/project3",
     },
     {
-      title: "プロジェクト4",
-      thumbnail: "/path/to/thumbnail4.jpg",
+      title: "塾の予定管理アプリ",
+      thumbnail: "https://github.com/user-attachments/assets/a9c61104-cda7-4a32-9d30-b541acac3a34",
       link: "https://example.com/project4",
     },
     {
-      title: "プロジェクト5",
-      thumbnail: "/path/to/thumbnail5.jpg",
+      title: "comming soon...",
+      thumbnail: "https://github.com/user-attachments/assets/72cb6af4-da13-427c-ad58-3a49a8c52cf3",
       link: "https://example.com/project5",
     },
     {
-      title: "プロジェクト6",
-      thumbnail: "/path/to/thumbnail6.jpg",
+      title: "comming soon...",
+      thumbnail: "https://github.com/user-attachments/assets/72cb6af4-da13-427c-ad58-3a49a8c52cf3",
       link: "https://example.com/project6",
     },
-    // 追加のプロジェクトをここに追加
   ];
   return (
-    // <div className="text-center">
-    //   <h1 className="text-4xl mb-4">My Works</h1>
-    //   <p>This is the works page. Showcase your projects here.</p>
-    // </div>
-    <div className="grid grid-cols-3 gap-4 p-4">
+    <div className="grid grid-cols-3 gap-20 p-4">
       {projects.map((project) => (
         <a
           key={project.title}
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative group block overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105 border-4 border-gray-800 bg-gray-900"
+          className="relative group block overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-125 hover:z-100"
         >
-          <div className="absolute inset-0 border-4 border-gray-700 rounded-lg p-2">
-            <img src={project.thumbnail} alt={project.title} className="w-full h-40 object-cover rounded-lg" />
-          </div>
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-            <h3 className="text-lg font-bold">{project.title}</h3>
-          </div>
+          <img src={project.thumbnail} alt={project.title} className="w-full h-60 object-cover" />
         </a>
       ))}
     </div>

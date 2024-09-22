@@ -27,7 +27,7 @@ export default function RootLayout({
         {/* MatrixCode コンポーネントを背景として配置 */}
         <MatrixCode />
         {/* 各ページのコンテンツを表示 */}
-        <main className="relative z-10 flex justify-center items-center min-h-screen">{children}</main>
+        <main className="relative z-10 flex justify-center items-center min-h-screen font-dot">{children}</main>
       </body>
     </html>
   );
