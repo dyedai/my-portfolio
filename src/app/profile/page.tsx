@@ -24,34 +24,37 @@ export default function ProfilePage() {
         <p className="text-lg mt-2">Frontend Engineer / Student</p>
       </div>
       <hr className="w-7/12 mx-auto" />
-      <div className="md:flex px-32 my-10 gap-96">
-        <div className="py-8">
+
+      <div className="lg:gap-96 flex flex-col lg:flex-row px-6 md:px-32 my-10">
+        <div className="py-8 lg:w-1/2">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="">
-            芝浦工業大学 システム理工学部 電子情報システム学科所属　学部3年
-            <br /> Web制作をメインにデザインやコーディングをしています。
+            <span className="whitespace-nowrap">芝浦工業大学 システム理工学部 電子情報システム学科所属　学部3年</span>
             <br />
-            主にHTML/CSS、JavaScriptを使用しています。
+            <span className="whitespace-nowrap">Web制作をメインにデザインやコーディングをしています。</span>
             <br />
-            最近はReactやNext.jsなどにも興味があります。
+            <span className="whitespace-nowrap">主にHTML/CSS、JavaScriptを使用しています。</span>
+            <br />
+            <span className="whitespace-nowrap">最近はReactやNext.jsなどにも興味があります。</span>
           </p>
         </div>
-        <div className="py-8">
+        <div className="py-8 lg:w-1/2">
           <h2 className="text-2xl font-semibold mb-4">Status</h2>
           <p className="">
-            せいべつ：おとこ
+            <span className="whitespace-nowrap">せいべつ：おとこ</span>
             <br />
-            年齢：２１歳
+            <span className="whitespace-nowrap">年齢：２１歳</span>
             <br />
-            出身：とうきょう
+            <span className="whitespace-nowrap">出身：とうきょう</span>
             <br />
-            趣味：服
+            <span className="whitespace-nowrap">趣味：服</span>
           </p>
         </div>
       </div>
-      <div className="px-32 py-8">
+
+      <div className="md:px-32 py-8">
         <h2 className="text-2xl font-semibold mb-6">Skills</h2>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
           <SkillIcon img="/images/HTML5_Badge.svg" label="HTML/CSS" />
           <SkillIcon img="/images/javascript-original.svg" label="JavaScript" />
           <SkillIcon img="/images/react-logo.svg" label="React" />
