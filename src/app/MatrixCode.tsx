@@ -1,7 +1,11 @@
 "use client";
+
 import React, { useEffect } from "react";
+import { useUnicode } from "./UnicodeContext";
 
 const MatrixCode: React.FC = () => {
+  const { UnicodeValue } = useUnicode();
+
   useEffect(() => {
     const canvas = document.getElementById("q") as HTMLCanvasElement;
     const context = canvas.getContext("2d");
@@ -16,7 +20,7 @@ const MatrixCode: React.FC = () => {
         context.fillRect(0, 0, w, h);
         context.fillStyle = "#0F0";
         p.map((v, i) => {
-          context.fillText(String.fromCharCode(40 + Math.random() * 50), i * 10, v);
+          context.fillText(String.fromCharCode(UnicodeValue + Math.random() * 50), i * 10, v);
           p[i] = v > 758 + Math.random() * 1e4 ? 0 : v + 10;
         });
       }
@@ -24,7 +28,7 @@ const MatrixCode: React.FC = () => {
 
     const interval = setInterval(matrixEffect, 33);
     return () => clearInterval(interval);
-  }, []);
+  }, [UnicodeValue]);
 
   return (
     <div className="fixed inset-0 w-full h-full overflow-hidden">

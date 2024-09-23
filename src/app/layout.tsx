@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DotGothic16 } from "next/font/google";
 import Header from "../app/Header";
 import MatrixCode from "./MatrixCode";
+import { UnicodeProvider } from "./UnicodeContext";
 
 import "./globals.css";
 
@@ -25,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dot.variable} antialiased bg-black text-white font-dot`}>
-        <MatrixCode />
-        <Header />
-        <main className="relative z-10 flex justify-center items-center min-h-screen font-dot">{children}</main>
+        <UnicodeProvider>
+          <MatrixCode />
+          <Header />
+          <main className="relative z-10 flex justify-center items-center min-h-screen font-dot">{children}</main>
+        </UnicodeProvider>
       </body>
     </html>
   );
