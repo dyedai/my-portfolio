@@ -24,7 +24,7 @@ export default function SecretPage() {
   return (
     <div className="text-center">
       <input className="text-2xl border-none outline-none bg-transparent w-6" value={inputValue} onChange={handleChange} />
-      <span className="sr-only">このinputタグに0d(Unicode)を打つと。。。？</span>
+      <span className="sr-only">このinputタグに0d(Unicode)を打つと。。。？　https://ja.wikipedia.org/wiki/Unicode%E4%B8%80%E8%A6%A7%E8%A1%A8</span>
       <a className="text-2xl">4 This page could not be found.</a>
     </div>
   );
