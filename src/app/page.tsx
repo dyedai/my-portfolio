@@ -1,4 +1,6 @@
 export default function HomePage() {
+  console.log("隠し要素はどこかな？？");
+
   return (
     <div className="text-center">
       <h1 className="font-dot text-4xl mb-4">Welcome to My Website</h1>

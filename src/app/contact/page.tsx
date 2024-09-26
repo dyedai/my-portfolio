@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function ContactPage() {
+  console.log("このページではないな");
+
   return (
     <div className="text-center">
       <div className="flex items-center gap-20 justify-center">

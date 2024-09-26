@@ -16,6 +16,8 @@ const SkillIcon: React.FC<SkillIconProps> = ({ img, label }) => (
 );
 
 export default function ProfilePage() {
+  console.log("このページにはなにもないかな");
+
   return (
     <div className="w-11/12 min-h-screen mx-auto rounded-lg overflow-hidden">
       <div className="px-6 py-8 text-center">
