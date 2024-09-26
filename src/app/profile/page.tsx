@@ -9,7 +9,7 @@ interface SkillIconProps {
 const SkillIcon: React.FC<SkillIconProps> = ({ img, label }) => (
   <div className="flex flex-col items-center">
     <div className="p-10">
-      <Image width={60} height={60} src={img} alt={label} />
+      <Image src={img} alt={label} width={60} height={60} />
     </div>
     <span className="mt-2 text-sm">{label}</span>
   </div>
@@ -30,19 +30,19 @@ export default function ProfilePage() {
       <div className="lg:gap-96 flex flex-col lg:flex-row px-6 md:px-32 my-10">
         <div className="py-8 lg:w-1/2">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-          <p className="">
-            <span className="whitespace-nowrap">芝浦工業大学 システム理工学部 電子情報システム学科所属　学部3年</span>
+          <p>
+            <span className="md:whitespace-nowrap">芝浦工業大学 システム理工学部 電子情報システム学科所属　学部3年</span>
             <br />
-            <span className="whitespace-nowrap">Web制作をメインにデザインやコーディングをしています。</span>
+            <span className="md:whitespace-nowrap">Web制作をメインにデザインやコーディングをしています。</span>
             <br />
-            <span className="whitespace-nowrap">主にHTML/CSS、JavaScriptを使用しています。</span>
+            <span className="md:whitespace-nowrap">主にHTML/CSS、JavaScriptを使用しています。</span>
             <br />
-            <span className="whitespace-nowrap">最近はReactやNext.jsなどにも興味があります。</span>
+            <span className="md:whitespace-nowrap">最近はReactやNext.jsなどにも興味があります。</span>
           </p>
         </div>
         <div className="py-8 lg:w-1/2">
           <h2 className="text-2xl font-semibold mb-4">Status</h2>
-          <p className="">
+          <p>
             <span className="whitespace-nowrap">せいべつ：おとこ</span>
             <br />
             <span className="whitespace-nowrap">年齢：２１歳</span>
