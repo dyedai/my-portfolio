@@ -23,7 +23,7 @@ export default function ProfilePage() {
       <div className="px-6 py-8 text-center">
         <p className="text-5xl font-bold md:text-9xl">DaiDai</p>
         <span className="mt-2 text-lg">Daiki Kakimi</span>
-        <p className="text-lg mt-2">Frontend Engineer / Student</p>
+        <p className="text-lg mt-2">Web Engineer / Designer?</p>
       </div>
       <hr className="w-7/12 mx-auto" />
 
@@ -33,11 +33,15 @@ export default function ProfilePage() {
           <p>
             <span className="md:whitespace-nowrap">芝浦工業大学 システム理工学部 電子情報システム学科所属　学部3年</span>
             <br />
+            <a className="md:whitespace-nowrap" href="https://technova.studio.site">
+              TechNova所属(公式サイトはこちら)
+            </a>
+            <br />
             <span className="md:whitespace-nowrap">Web制作をメインにデザインやコーディングをしています。</span>
             <br />
             <span className="md:whitespace-nowrap">主にHTML/CSS、JavaScriptを使用しています。</span>
             <br />
-            <span className="md:whitespace-nowrap">最近はReactやNext.jsなどにも興味があります。</span>
+            <span className="md:whitespace-nowrap">最近はReactやNext.js、3DCG(blender)などにも興味があります。</span>
           </p>
         </div>
         <div className="py-8 lg:w-1/2">
@@ -45,7 +49,7 @@ export default function ProfilePage() {
           <p>
             <span className="whitespace-nowrap">せいべつ：おとこ</span>
             <br />
-            <span className="whitespace-nowrap">年齢：２１歳</span>
+            <span className="whitespace-nowrap">うまれ：2003/5/24</span>
             <br />
             <span className="whitespace-nowrap">出身：とうきょう</span>
             <br />
@@ -59,10 +63,17 @@ export default function ProfilePage() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
           <SkillIcon img="/images/HTML5_Badge.svg" label="HTML/CSS" />
           <SkillIcon img="/images/javascript-original.svg" label="JavaScript" />
+          <SkillIcon img="/images/typescript-original.svg" label="TypeScript" />
           <SkillIcon img="/images/react-logo.svg" label="React" />
-          <SkillIcon img="/images/cpp_logo.png" label="C" />
-          <SkillIcon img="/images/Figma-Icon.svg" label="Figma" />
+          <SkillIcon img="/images/nextjs-original.svg" label="Next.js" />
+          <SkillIcon img="/images/tailwindcss-original.svg" label="Tailwidcss" />
+          <SkillIcon img="/images/nodejs-original.svg" label="Node.js" />
+          <SkillIcon img="/images/linux-original.svg" label="Linux" />
+          <SkillIcon img="/images/c-original.svg" label="C" />
+          <SkillIcon img="/images/java-original.svg" label="Java" />
           <SkillIcon img="/images/Logomark_Full Color.png" label="Firebase" />
+          <SkillIcon img="/images/figma-original.svg" label="Figma" />
+          <SkillIcon img="/images/blender-original.svg" label="Blender" />
         </div>
       </div>
     </div>
