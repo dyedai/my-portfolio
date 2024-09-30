@@ -27,13 +27,13 @@ export default function ProfilePage() {
       </div>
       <hr className="w-7/12 mx-auto" />
 
-      <div className="lg:gap-96 flex flex-col lg:flex-row px-6 md:px-32 my-10">
+      <div className="flex flex-col laptopS:gap-96 px-6 md:px-32 my-10 4k:gap-[80rem] laptopS:flex-row">
         <div className="py-8 lg:w-1/2">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p>
             <span className="md:whitespace-nowrap">芝浦工業大学 システム理工学部 電子情報システム学科所属　学部3年</span>
             <br />
-            <a className="md:whitespace-nowrap" href="https://technova.studio.site">
+            <a className="md:whitespace-nowrap" href="https://technova.studio.site" target="_blank">
               TechNova所属(公式サイトはこちら)
             </a>
             <br />
@@ -45,7 +45,7 @@ export default function ProfilePage() {
           </p>
         </div>
         <div className="py-8 lg:w-1/2">
-          <h2 className="text-2xl font-semibold mb-4">Status</h2>
+          <h2 className="text-2xl mb-4">Status</h2>
           <p>
             <span className="whitespace-nowrap">せいべつ：おとこ</span>
             <br />

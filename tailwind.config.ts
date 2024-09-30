@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         dot: ["var(--font-dot)", "sans-serif"],
       },
+      screens: { "4k": "2560px", laptopS: "1155px" },
     },
   },
   plugins: [flowbite.plugin()],
