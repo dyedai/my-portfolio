@@ -34,8 +34,13 @@ export default function ProfilePage() {
             <span className="md:whitespace-nowrap">芝浦工業大学 システム理工学部 電子情報システム学科所属　学部3年</span>
             <br />
             <span className="md:whitespace-nowrap">TechNova所属 </span>
-            <a className="md:whitespace-nowrap underline" href="https://technova.studio.site" target="_blank">
-              https://technova.studio.site
+            <br />
+            <a className="md:whitespace-nowrap underline text-blue-600" href="https://technova.studio.site" target="_blank">
+              TechNova公式サイト
+            </a>
+            <br />
+            <a className="md:whitespace-nowrap underline text-blue-600" href="https://x.com/TechNova_JP" target="_blank">
+              公式X(Twitter)
             </a>
             <br />
             <span className="md:whitespace-nowrap">Web制作をメインにデザインやコーディングをしています。</span>
