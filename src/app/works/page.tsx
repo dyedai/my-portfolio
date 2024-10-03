@@ -19,7 +19,7 @@ export default function WorksPage() {
     {
       title: "):レシートバトルアプリ:(",
       thumbnail: "/images/receptBattle.png",
-      link: "receptbattle",
+      link: "receiptbattle",
     },
     {
       title: "):塾の予定管理アプリ:(",
@@ -29,12 +29,12 @@ export default function WorksPage() {
     {
       title: "comming soon...",
       thumbnail: "/images/noise.gif",
-      link: "comingsoon",
+      link: "comingsoon1",
     },
     {
       title: "comming soon...",
       thumbnail: "/images/noise.gif",
-      link: "comingsoon",
+      link: "comingsoon2",
     },
   ];
   return (
