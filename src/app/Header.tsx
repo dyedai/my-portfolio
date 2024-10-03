@@ -1,19 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation"; // For detecting route changes in the App Router
 import AnimatedLink from "./animatedlink";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); // Hook to get the current route in the App Router
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  // Automatically close the menu when navigating to a new page
+  useEffect(() => {
+    setIsOpen(false); // Close the menu when route changes
+  }, [pathname]); // Run this effect when the route changes
+
   return (
     <nav className="relative top-0 left-0 w-full z-20">
       <div className="w-full flex flex-wrap items-center justify-between md:p-10">
-        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse" onClick={() => setIsOpen(false)}>
           <span className="self-center text-3xl md:text-5xl font-semibold whitespace-nowrap text-white">&apos;DAI.DAI.FORIO&apos;</span>
         </Link>
         <button
@@ -36,6 +44,7 @@ const Header: React.FC = () => {
                   english={item}
                   japanese={item === "):" ? ":)" : item === "HOME" ? "ホーム" : item === "WORKS" ? "作品" : item === "PROFILE" ? "プロフィール" : "連絡先"}
                   className="c-txt line flex py-2 px-3 text-white transition duration-200"
+                  onClick={() => setIsOpen(false)} // Close the menu when clicking on a link
                 >
                   <span className="text-2xl font-semibold whitespace-nowrap text-white">{item}</span>
                 </AnimatedLink>

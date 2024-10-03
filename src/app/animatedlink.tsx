@@ -23,6 +23,7 @@ interface AnimatedLinkProps {
   japanese: string;
   children: React.ReactNode;
   className?: string;
+  onClick?: () => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
