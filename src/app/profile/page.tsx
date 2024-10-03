@@ -50,7 +50,7 @@ export default function ProfilePage() {
             <span className="md:whitespace-nowrap">最近はReactやNextjs、3DCG(blender)などにも興味があります。</span>
           </p>
         </div>
-        <div className="py-8 lg:w-1/2">
+        <div className="py-8 lg:w-1/2 font-semibold">
           <h2 className="text-2xl mb-4">Status</h2>
           <p>
             <span className="whitespace-nowrap">せいべつ：おとこ</span>
@@ -65,7 +65,7 @@ export default function ProfilePage() {
       </div>
 
       <div className="md:px-32 py-8">
-        <h2 className="text-2xl font-semibold mb-6">Skills</h2>
+        <h2 className="text-2xl font-semibold mb-6 px-6 lg:px-0">Skills</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
           <SkillIcon img="/images/HTML5_Badge.svg" label="HTML/CSS" />
           <SkillIcon img="/images/javascript-original.svg" label="JavaScript" />
