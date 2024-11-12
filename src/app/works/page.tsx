@@ -27,6 +27,21 @@ export default function WorksPage() {
       link: "manageclass",
     },
     {
+      title: "):PictLog:(",
+      thumbnail: "/images/pictlog/home.png",
+      link: "pictlog",
+    },
+    {
+      title: "):LuggPal:(",
+      thumbnail: "/images/luggpal/home.png",
+      link: "luggpal",
+    },
+    {
+      title: "):しりとりすごろくゲーム:(",
+      thumbnail: "/images/shiritorisugoroku/home.png",
+      link: "shiritorisugoroku",
+    },
+    {
       title: "comming soon...",
       thumbnail: "/images/noise.gif",
       link: "comingsoon1",
