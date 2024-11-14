@@ -27,13 +27,13 @@ export default function ProfilePage() {
       </div>
       <hr className="w-7/12 mx-auto" />
 
-      <div className="flex flex-col laptopS:gap-96 px-6 md:px-32 my-10 4k:gap-[80rem] laptopS:flex-row">
+      <div className="flex flex-col laptopS:gap-96 px-6 md:px-32 mt-10 4k:gap-[80rem] laptopS:flex-row">
         <div className="py-8 lg:w-1/2">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p>
             <span className="md:whitespace-nowrap">芝浦工業大学 システム理工学部 電子情報システム学科所属　学部3年</span>
             <br />
-            <span className="md:whitespace-nowrap">TechNova所属 </span>
+            <span className="md:whitespace-nowrap">TechNova所属(運営)</span>
             <br />
             <a className="md:whitespace-nowrap underline text-blue-600" href="https://technova.studio.site" target="_blank">
               TechNova公式サイト
@@ -48,10 +48,11 @@ export default function ProfilePage() {
             <span className="md:whitespace-nowrap">主にHTML/CSS、JavaScriptを使用しています。</span>
             <br />
             <span className="md:whitespace-nowrap">最近はReactやNextjs、3DCG(blender)などにも興味があります。</span>
+            <br />
           </p>
         </div>
-        <div className="py-8 lg:w-1/2 font-semibold">
-          <h2 className="text-2xl mb-4">Status</h2>
+        <div className="py-8 lg:w-1/2">
+          <h2 className="text-2xl mb-4 font-semibold">Status</h2>
           <p>
             <span className="whitespace-nowrap">せいべつ：おとこ</span>
             <br />
@@ -62,6 +63,11 @@ export default function ProfilePage() {
             <span className="whitespace-nowrap">趣味：服</span>
           </p>
         </div>
+      </div>
+
+      <div className="px-6 md:px-32 py-8">
+        <h2 className="font-semibold text-2xl mb-4">Qualifications</h2>
+        <p className="">TOEIC：705, 英検CSEスコア：2311(準一級相当), CGエンジニア検定ベーシック, 画像処理エンジニア検定ベーシック</p>
       </div>
 
       <div className="md:px-32 py-8">
