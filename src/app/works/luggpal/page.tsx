@@ -9,26 +9,20 @@ export default function ReceiptbatllePage() {
         <div className="lg:w-1/2 h-ful text-white lg:px-8 pt-2">
           <h1 className="font-dot text-3xl lg:text-4xl my-8 text-center">&lt;LuggPal/&gt;</h1>
           <p className="mx-2">
-            ShiritoriSugorokuは、オンラインですごろくを楽しむアプリケーションで、ユーザー同士がしりとりをしながら進行するゲームです。このアプリの目的は、ユーザー間の双方向通信を活用し、インターネット上で友達や他のプレイヤーとすごろくを行えるシステムを実装することです。
-            まず、ユーザーはアプリ内でユーザー登録とログインを行います。ユーザー名とパスワードを設定し、登録情報はデータベースサーバに保存されます。既に使用されているユーザー名は登録できませんが、文字数に制限はありません。パスワードは最低4文字必要で、空白や不正な文字が含まれている場合は再入力を求められます。
-            マッチングの仕組みは、ユーザーがマップのマス目を選択し、同じマスを選んだ他のユーザーと自動的にマッチングされます。ゲームは4人でプレイされ、4人が集まるとすぐに開始されます。また、ゲーム中にプレイヤーが途中で切断された場合は、残りのプレイヤーで続行し、1人しか残っていない場合はゲーム自体が終了します。
-            ゲームの進行は、基本的にすごろくのルールにしりとりを組み合わせたものです。ゲームは「り」から始まり、順番はランダムに決まります。各プレイヤーはサイコロを振り、その出目の数に対応した文字数でしりとりを行います。例えば、サイコロで3が出た場合、プレイヤーは3文字の言葉を回答します。回答はひらがなで行い、制限時間は30秒です。正しく回答できなかった場合、そのプレイヤーは進めず、次のプレイヤーに順番が回ります。回答の正確さは辞書APIを利用して判定され、不正な回答には制限時間内の無回答や、指定された文字数に合わない回答、辞書に存在しない言葉、「ん」で終わる言葉などがあります。
-            全てのプレイヤーがある文字に対して回答できなかった場合、先頭の文字が新たなランダムな五十音に変更され、次のターンが開始されます。ゲームは、参加プレイヤーのうち3人がゴールした時点で終了し、順位が確定します。
-            このアプリケーションは、しりとりとすごろくの要素を組み合わせた新しいゲーム体験を提供し、オンライン上で気軽に友達や他のユーザーと楽しむことができます。
+            LuggPalは、荷物を預けたい人（Traveler）と荷物を預かりたい人（Keeper）をマッチングさせるサービスです。
+            荷物を預ける側は、地域や日時をもとに効率的に預かり手を探すことができ、預かる側は、余ったスペースを活用して荷物を預けたい人とマッチングできます。
+            このサービスは、特に遠出や旅行の際に大きな荷物やスーツケースを持ち歩く負担を解消することを目的としています。
+            旅行中に重い荷物を持って階段を上ったり、狭い道を通るといった不便さを感じる場面があり、もしその荷物を好きな場所に預けることができれば、旅行をより快適に楽しめると考えました。
+            一方で、スペースを有効に活用したいというニーズにも応え、家や店舗に余裕がある場合、そのスペースを活用して荷物を預かることで収益を得ることができます。
+            このように、旅行者とスペースの提供者双方のニーズを満たすサービスを目指しています。
           </p>
           <p className="mx-2">
-            ShiritoriSugoroku is an online backgammon application, a game in which users play backgammon with each other. The purpose of this application is to implement a system that allows users to
-            play Sugoroku with friends and other players over the Internet, utilizing two-way communication between users. First, the user registers and logs in to the application. A user name and
-            password are set, and the registration information is stored on a database server. A user name that is already in use cannot be registered, but there is no limit to the number of
-            characters that can be used. Passwords must be at least 4 characters long, and if it contains spaces or invalid characters, the user will be asked to re-enter the password. The matching
-            mechanism is that users select squares on the map and are automatically matched with other users who have selected the same squares. Games are played by four players and begin as soon as
-            four players have gathered. If a player is disconnected midway through the game, the game continues with the remaining players; if only one player remains, the game itself ends. The game
-            progression is basically a combination of Sugoroku rules and Shiritori. The game begins with “ri” and the order is determined randomly. Each player rolls the dice and plays Shiritori with
-            the number of letters corresponding to the number of rolls. For example, if the dice rolls a 3, the player answers with a 3-letter word. The answer must be in hiragana, and the time limit
-            is 30 seconds. If a player fails to answer correctly, he/she does not advance and the next player takes his/her turn. The accuracy of answers is judged using the dictionary API. Incorrect
-            answers include no answers within the time limit, answers that do not match the specified number of characters, words that do not exist in the dictionary, and words ending with “n”. If all
-            players fail to answer a letter, the first letter is changed to a new random syllable and the next turn begins. The game ends when three of the participating players reach the goal, and
-            the ranking is determined. This application provides a new gaming experience combining elements of Shiritori and backgammon, and can be easily enjoyed online with friends and other users.
+            LuggPal is a service that matches people who want to leave their luggage (Traveler) with people who want to keep their luggage (Keeper). Luggages can be stored in a location or on a date
+            and time basis, and keepers can match up with people who want to store their luggage in their spare space. This service is intended to relieve the burden of carrying large luggage and
+            suitcases, especially when traveling far away from home or on vacation. There are times during a trip when people find it inconvenient to carry heavy luggage up stairs or through narrow
+            streets, and we thought that if they could leave their luggage at a place of their choice, they would be able to enjoy their trip more comfortably. On the other hand, we also responded to
+            the need for efficient use of space, and if there is enough space in a house or store, we can earn revenue by using that space to store luggage. In this way, we aim to provide a service
+            that satisfies the needs of both travelers and space providers.
           </p>
           <p className="mx-2 mt-4">仕様技術：Next.js, Prettier, Eslint, Firebase, Figma</p>
           <p className="mb-4 mx-2">JPhacks出場作品</p>
