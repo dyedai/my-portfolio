@@ -16,7 +16,7 @@ export default function ReceiptbatllePage() {
             一方で、スペースを有効に活用したいというニーズにも応え、家や店舗に余裕がある場合、そのスペースを活用して荷物を預かることで収益を得ることができます。
             このように、旅行者とスペースの提供者双方のニーズを満たすサービスを目指しています。
           </p>
-          <p className="mx-2">
+          <p className="mx-2 mt-2">
             LuggPal is a service that matches people who want to leave their luggage (Traveler) with people who want to keep their luggage (Keeper). Luggages can be stored in a location or on a date
             and time basis, and keepers can match up with people who want to store their luggage in their spare space. This service is intended to relieve the burden of carrying large luggage and
             suitcases, especially when traveling far away from home or on vacation. There are times during a trip when people find it inconvenient to carry heavy luggage up stairs or through narrow

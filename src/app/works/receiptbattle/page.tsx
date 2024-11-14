@@ -15,7 +15,7 @@ export default function ReceiptbatllePage() {
             また、バトル機能はコンピューターのみとなっていますが、オンラインでプレイヤーとバトルをできるような機能を実装したいと考えています。
             今回はブラウザ上でのみ実行できる環境ですが、IPhoneやアンドロイドなどを対象としたアプリケーション開発も視野に入れ、最終的にはリリースできるように励みます。
           </p>
-          <p className="mx-2">
+          <p className="mx-2 mt-2">
             I was in charge of design and front of house. We used “Humation” by en. for the illustration. Receipt Battle is an application that reads the amount of money on receipts and uses it as
             in-game currency. As a future perspective, since the function of a household account book is currently not completed, we will read strings from receipts and use the read amounts to
             complete various functions. Also, the battle function is computer only, but we would like to implement a function that would allow players to battle online. Although this environment can

@@ -15,7 +15,7 @@ export default function ReceiptbatllePage() {
             ユーザーは自分の過去の絵日記を簡単に振り返ることができ、また友達が作成した絵日記も閲覧できるため、今まで知らなかった友達の一面を知ることができるかもしれません。
             このように、PictLogは日々の出来事を新たな形で記録し、思い出をより鮮明に、そして楽しく残すことを目的としたSNSです。
           </p>
-          <p className="mx-2">
+          <p className="mx-2 mt-2">
             PictLog is a new type of social networking service that allows users to share their diaries with friends by automatically generating pictures from the diary entries. Unlike conventional
             diaries, PictLog is not only a diary, but also a place where users can share their memories with friends and share their experiences. Users can easily look back on their own past picture
             diaries, and since they can also view picture diaries created by their friends, they may learn about a side of their friends that they had never known before. In this way, PictLog is a

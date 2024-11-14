@@ -16,7 +16,7 @@ export default function ReceiptbatllePage() {
             3人のプレイヤーがゴールに到達するとゲーム終了となり、順位が確定します。
             ShiritoriSugorokuは、しりとりのスリルとすごろくの戦略性を掛け合わせた、新しい体験を提供します。気軽に友達や他のユーザーと一緒に楽しめる、手軽で楽しいゲームです。
           </p>
-          <p className="mx-2">
+          <p className="mx-2 mt-2">
             Shiritori-Sugoroku is an online game that combines Shiritori and Sugoroku. Players compete with friends and other users via the Internet in a fun and competitive game. The game starts with
             “ri” and players play Shiritori with the number of letters corresponding to the number of dice rolls. For example, if the dice rolls a “3”, the player answers with a 3-letter hiragana
             word. There is a 30-second time limit for answering Shiritori, and the dictionary API is used to determine if the word is correct or not. If a word ends with “n” or an incorrect answer is
