@@ -11,6 +11,7 @@ const dot = DotGothic16({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-dot",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -25,11 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dot.variable} antialiased bg-black text-white font-dot`}>
+      <body
+        className={`${dot.variable} antialiased bg-black text-white font-dot`}
+      >
         <UnicodeProvider>
           <MatrixCode />
           <Header />
-          <main className="relative z-10 flex justify-center items-center min-h-screen font-dot">{children}</main>
+          <main className="relative z-10 flex justify-center items-center min-h-screen font-dot">
+            {children}
+          </main>
         </UnicodeProvider>
       </body>
     </html>
