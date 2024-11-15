@@ -32,11 +32,6 @@ export default function HomePage() {
         el: mainWrapper,
       });
     }
-
-    // クリーンアップ関数
-    return () => {
-      // 必要に応じてリソースの解放処理を追加
-    };
   }, []);
 
   return (

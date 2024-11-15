@@ -6,8 +6,8 @@ import { Util } from "@/libs/util";
 export class Mouse {
   private static _instance: Mouse;
 
-  public x: number = window.innerWidth * 0.5;
-  public y: number = window.innerHeight * 0.5;
+  public x: number;
+  public y: number;
   public old: Point = new Point();
   public normal: Point = new Point();
   public easeNormal: Point = new Point();
@@ -21,59 +21,55 @@ export class Mouse {
   private _updateHandler: any;
 
   constructor() {
-    if (Util.instance.isTouchDevice()) {
-      const tg = document.querySelector(".js-canvas");
-      if (tg != undefined) {
-        tg.addEventListener(
-          "touchstart",
-          (e: any = {}) => {
-            this._eTouchStart(e);
-          },
-          { passive: false }
-        );
-        tg.addEventListener(
-          "touchend",
-          () => {
-            this._eTouchEnd();
-          },
-          { passive: false }
-        );
-        tg.addEventListener(
-          "touchmove",
-          (e: any = {}) => {
-            this._eTouchMove(e);
-          },
-          { passive: false }
-        );
-      }
-    } else {
-      window.addEventListener("mousedown", (e: any = {}) => {
-        this._eDown(e);
-      });
-      window.addEventListener("mouseup", () => {
-        this._eUp();
-      });
-      window.addEventListener("mousemove", (e: any = {}) => {
-        this._eMove(e);
-      });
-      // document.addEventListener('wheel', (e) => {
-      //     if(this.usePreventDefault) {
-      //         e.preventDefault()
-      //         e.stopPropagation()
-      //     }
-      //     const test = Math.abs(e.deltaY)
-      //     if(test > 5 && this._useWheel) {
-      //         if(this.onSwipe != undefined) this.onSwipe({move:e.deltaY})
-      //         this._useWheel = false
-      //         setTimeout(() => {
-      //             this._useWheel = true
-      //         }, 1000)
-      //     }
-      // }, {passive:false})
-    }
+    // Initialize x and y with default values
+    this.x = 0;
+    this.y = 0;
 
-    this._updateHandler = this._update.bind(this);
-    Update.instance.add(this._updateHandler);
+    // Only add event listeners if we're in the browser (not SSR)
+    if (typeof window !== "undefined") {
+      this.x = window.innerWidth * 0.5;
+      this.y = window.innerHeight * 0.5;
+
+      if (Util.instance.isTouchDevice()) {
+        const tg = document.querySelector(".js-canvas");
+        if (tg != undefined) {
+          tg.addEventListener(
+            "touchstart",
+            (e: any = {}) => {
+              this._eTouchStart(e);
+            },
+            { passive: false }
+          );
+          tg.addEventListener(
+            "touchend",
+            () => {
+              this._eTouchEnd();
+            },
+            { passive: false }
+          );
+          tg.addEventListener(
+            "touchmove",
+            (e: any = {}) => {
+              this._eTouchMove(e);
+            },
+            { passive: false }
+          );
+        }
+      } else {
+        window.addEventListener("mousedown", (e: any = {}) => {
+          this._eDown(e);
+        });
+        window.addEventListener("mouseup", () => {
+          this._eUp();
+        });
+        window.addEventListener("mousemove", (e: any = {}) => {
+          this._eMove(e);
+        });
+      }
+
+      this._updateHandler = this._update.bind(this);
+      Update.instance.add(this._updateHandler);
+    }
   }
 
   public static get instance(): Mouse {
@@ -95,15 +91,12 @@ export class Mouse {
   private _eTouchEnd(): void {
     this.isDown = false;
 
-    // 上下スワイプ判定
     const dx = this.old.x - this.x;
     const dy = this.old.y - this.y;
-    // console.log(Math.abs(dy))
+
     if (Math.abs(dy) > 0 || Math.abs(dx) > 0) {
       if (this.onSwipe != undefined) this.onSwipe({ move: dy });
     }
-    // console.log(dy)
-    // Param.instance.setMemo(dx + ',' + dy)
   }
 
   private _eTouchMove(e: any = {}): void {
@@ -146,21 +139,21 @@ export class Mouse {
   }
 
   private _update(): void {
-    if (this.isDown) {
-      this.moveDist.x = this.start.x - this.x;
-      this.moveDist.y = this.start.y - this.y;
-    } else {
-      this.moveDist.x += (0 - this.moveDist.x) * 0.25;
-      this.moveDist.y += (0 - this.moveDist.y) * 0.25;
+    if (typeof window !== "undefined") {
+      if (this.isDown) {
+        this.moveDist.x = this.start.x - this.x;
+        this.moveDist.y = this.start.y - this.y;
+      } else {
+        this.moveDist.x += (0 - this.moveDist.x) * 0.25;
+        this.moveDist.y += (0 - this.moveDist.y) * 0.25;
+      }
+
+      this.normal.x = Util.instance.map(this.x, -1, 1, 0, window.innerWidth);
+      this.normal.y = Util.instance.map(this.y, -1, 1, 0, window.innerHeight);
+
+      const ease = 0.1;
+      this.easeNormal.x += (this.normal.x - this.easeNormal.x) * ease;
+      this.easeNormal.y += (this.normal.y - this.easeNormal.y) * ease;
     }
-
-    this.normal.x = Util.instance.map(this.x, -1, 1, 0, window.innerWidth);
-    this.normal.y = Util.instance.map(this.y, -1, 1, 0, window.innerHeight);
-
-    const ease = 0.1;
-    this.easeNormal.x += (this.normal.x - this.easeNormal.x) * ease;
-    this.easeNormal.y += (this.normal.y - this.easeNormal.y) * ease;
-    // this.old.x = this.x
-    // this.old.y = this.y
   }
 }

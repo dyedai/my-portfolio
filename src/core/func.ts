@@ -4,10 +4,11 @@ import { Util } from "@/libs/util";
 
 export class Func {
   private static _instance: Func;
-  private _useFullScreen: boolean =
-    Util.instance.isSp() || Util.instance.isIPad();
+  private _useFullScreen: boolean;
 
-  constructor() {}
+  constructor() {
+    this._useFullScreen = Util.instance.isSp() || Util.instance.isIPad();
+  }
 
   public static get instance(): Func {
     if (!this._instance) {
@@ -21,31 +22,29 @@ export class Func {
   }
 
   public px(num: number): string {
-    return num + "px";
+    return `${num}px`;
   }
 
   public useScreen(): boolean {
-    return screen != undefined;
+    return typeof screen !== "undefined";
   }
 
   public sw(): number {
-    return window.innerWidth;
+    return window.innerWidth || 0;
   }
 
   public sh(): number {
-    if (this._useFullScreen) {
-      return screen.height;
-    } else {
-      return window.innerHeight;
-    }
+    return this._useFullScreen && typeof screen !== "undefined"
+      ? screen.height
+      : window.innerHeight || 0;
   }
 
   public screenOffsetY(): number {
     return (window.innerHeight - this.sh()) * 0.5;
   }
 
-  public screen(): number {
-    if (window.innerWidth <= Conf.instance.BREAKPOINT) {
+  public screen(): ScreenType {
+    if (this.sw() <= Conf.instance.BREAKPOINT) {
       return ScreenType.XS;
     } else {
       return ScreenType.LG;
@@ -53,19 +52,15 @@ export class Func {
   }
 
   public isXS(): boolean {
-    return this.screen() == ScreenType.XS;
+    return this.screen() === ScreenType.XS;
   }
 
   public isLG(): boolean {
-    return this.screen() == ScreenType.LG;
+    return this.screen() === ScreenType.LG;
   }
 
   public val(xs: number, lg: number): number {
-    if (this.isXS()) {
-      return xs;
-    } else {
-      return lg;
-    }
+    return this.isXS() ? xs : lg;
   }
 
   public r(val: number): number {
