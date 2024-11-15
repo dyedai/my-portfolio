@@ -31,7 +31,7 @@ export default function ProfilePage() {
         <div className="py-8 lg:w-1/2">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p>
-            <span className="md:whitespace-nowrap">芝浦工業大学 システム理工学部 電子情報システム学科所属　学部3年</span>
+            <span className="md:whitespace-nowrap">芝浦工業大学 システム理工学部 電子情報システム学科所属　学部３年</span>
             <br />
             <span className="md:whitespace-nowrap">TechNova所属(運営)</span>
             <br />
@@ -56,9 +56,9 @@ export default function ProfilePage() {
           <p>
             <span className="whitespace-nowrap">せいべつ：おとこ</span>
             <br />
-            <span className="whitespace-nowrap">うまれ：2003/5/24</span>
+            <span className="">うまれ：２００３(Ｈ１５)/５/２４</span>
             <br />
-            <span className="whitespace-nowrap">出身：とうきょう</span>
+            <span className="whitespace-nowrap">出身：とうきょう/ひがしやまと</span>
             <br />
             <span className="whitespace-nowrap">趣味：服</span>
           </p>
@@ -72,7 +72,7 @@ export default function ProfilePage() {
 
       <div className="md:px-32 py-8">
         <h2 className="text-2xl font-semibold mb-6 px-6 lg:px-0">Skills</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
           <SkillIcon img="/images/HTML5_Badge.svg" label="HTML/CSS" />
           <SkillIcon img="/images/javascript-original.svg" label="JavaScript" />
           <SkillIcon img="/images/typescript-original.svg" label="TypeScript" />
