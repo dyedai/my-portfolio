@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import device from "current-device";
@@ -186,52 +187,46 @@ export class Util {
   // IEかどうか Edge含む
   // -----------------------------------
   isIE(): boolean {
+    if (typeof window === "undefined") return false; // Guard clause for SSR
     const ua = window.navigator.userAgent.toLowerCase();
     return (
-      ua.indexOf("msie") != -1 ||
-      ua.indexOf("trident/7") != -1 ||
-      ua.indexOf("edge") != -1
+      ua.indexOf("msie") !== -1 ||
+      ua.indexOf("trident/7") !== -1 ||
+      ua.indexOf("edge") !== -1
     );
   }
 
-  // IEかどうか Edge含まない
-  // -----------------------------------
   isIE2(): boolean {
+    if (typeof window === "undefined") return false; // Guard clause for SSR
     const ua = window.navigator.userAgent.toLowerCase();
-    return ua.indexOf("msie") != -1 || ua.indexOf("trident/7") != -1;
+    return ua.indexOf("msie") !== -1 || ua.indexOf("trident/7") !== -1;
   }
 
-  // WINかどうか
-  // -----------------------------------
   isWin(): boolean {
-    return window.navigator.platform.indexOf("Win") != -1;
+    if (typeof window === "undefined") return false; // Guard clause for SSR
+    return window.navigator.platform.indexOf("Win") !== -1;
   }
 
-  // googleChromeかどうか
-  // -----------------------------------
   isChrome(): boolean {
-    return window.navigator.userAgent.toLowerCase().indexOf("chrome") != -1;
+    if (typeof window === "undefined") return false; // Guard clause for SSR
+    return window.navigator.userAgent.toLowerCase().indexOf("chrome") !== -1;
   }
 
-  // FireFoxかどうか
-  // -----------------------------------
   isFF(): boolean {
-    return window.navigator.userAgent.toLowerCase().indexOf("firefox") != -1;
+    if (typeof window === "undefined") return false; // Guard clause for SSR
+    return window.navigator.userAgent.toLowerCase().indexOf("firefox") !== -1;
   }
 
-  // Safariかどうか
-  // -----------------------------------
   isSafari(): boolean {
+    if (typeof window === "undefined") return false; // Guard clause for SSR
     return (
-      window.navigator.userAgent.toLowerCase().indexOf("safari") != -1 &&
+      window.navigator.userAgent.toLowerCase().indexOf("safari") !== -1 &&
       !this.isChrome()
     );
   }
 
-  // -----------------------------------
-  // webGL使えるか
-  // -----------------------------------
   useWebGL(): boolean {
+    if (typeof window === "undefined") return false; // Guard clause for SSR
     try {
       const c = document.createElement("canvas");
       const w: any =
@@ -246,11 +241,8 @@ export class Util {
     }
   }
 
-  // クエリ抜き出し
-  // -----------------------------------
-  // @key : 抜き出すパラメータ名(String)
-  // -----------------------------------
   getQuery(key: string): string {
+    if (typeof window === "undefined") return ""; // Guard clause for SSR
     key = key.replace(/[€[]/, "€€€[").replace(/[€]]/, "€€€]");
     const regex = new RegExp("[€€?&]" + key + "=([^&//]*)");
     const qs = regex.exec(window.location.href);
@@ -261,10 +253,8 @@ export class Util {
     }
   }
 
-  // -----------------------------------
-  // タッチデバイスかどうか
-  // -----------------------------------
   isTouchDevice(): boolean {
+    if (typeof window === "undefined") return false; // Guard clause for SSR
     const isTouch = !!(
       "ontouchstart" in window ||
       (navigator != undefined && navigator.maxTouchPoints > 0)

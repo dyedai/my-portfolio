@@ -1,36 +1,39 @@
 "use client";
 
 import { useEffect } from "react";
-import { Color } from "three/src/math/Color";
-import { Util } from "@/libs/util";
-import { Param } from "@/core/param";
-import { HSL } from "@/libs/hsl";
-import { Contents } from "@/parts/contents";
+// import { Color } from "three/src/math/Color";
+// import { Util } from "@/libs/util";
+// import { Param } from "@/core/param";
+// import { HSL } from "@/libs/hsl";
+// import { Contents } from "@/parts/contents";
 import "./style.css";
 import "./globals.css";
 
 export default function HomePage() {
   useEffect(() => {
-    console.log("隠し要素はどこかな？？");
+    // Ensure that window and document are defined before accessing them
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
+      console.log("隠し要素はどこかな？？");
 
-    // Three.jsの初期化処理
-    for (let i = 0; i < 50; i++) {
-      const hsl = new HSL();
-      hsl.h = Util.instance.random(0, 1);
-      hsl.s = 1;
-      hsl.l = 0.5;
+      // Three.jsの初期化処理
+      // for (let i = 0; i < 50; i++) {
+      //   const hsl = new HSL();
+      //   hsl.h = Util.instance.random(0, 1);
+      //   hsl.s = 1;
+      //   hsl.l = 0.5;
 
-      let col = new Color();
-      col = col.setHSL(hsl.h, hsl.s, hsl.l);
-      Param.instance.colors.push(col);
-    }
+      //   let col = new Color();
+      //   col = col.setHSL(hsl.h, hsl.s, hsl.l);
+      //   Param.instance.colors.push(col);
+      // }
 
-    // Contentsの初期化
-    const mainWrapper = document.querySelector(".l-main-wrapper");
-    if (mainWrapper) {
-      new Contents({
-        el: mainWrapper,
-      });
+      // Contentsの初期化
+      // const mainWrapper = document.querySelector(".l-main-wrapper");
+      // if (mainWrapper) {
+      //   new Contents({
+      //     el: mainWrapper,
+      //   });
+      // }
     }
   }, []);
 

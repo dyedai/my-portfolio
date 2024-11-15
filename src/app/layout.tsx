@@ -11,6 +11,7 @@ const dot = DotGothic16({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-dot",
+  preload: true,
 });
 
 export const metadata: Metadata = {
