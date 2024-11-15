@@ -60,7 +60,7 @@ export class Func {
     return this.screen() == ScreenType.LG;
   }
 
-  public val(xs: any, lg: any): any {
+  public val(xs: number, lg: number): number {
     if (this.isXS()) {
       return xs;
     } else {

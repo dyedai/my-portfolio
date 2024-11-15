@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { MyDisplay } from "../core/myDisplay";
 import { Conf } from "../core/conf";
 import { SampleLoader } from "./sampleLoader";
@@ -81,8 +82,8 @@ export class Contents extends MyDisplay {
         const el: HTMLElement = val.el;
         el.classList.remove(val.now);
 
-        let ix = (val.cnt + val.ix) % maxIx;
-        let n = "col-" + ix + "-" + val.iy;
+        const ix = (val.cnt + val.ix) % maxIx;
+        const n = "col-" + ix + "-" + val.iy;
         val.now = n;
         el.classList.add(val.now);
 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import GUI from "lil-gui";
 import Stats from "three/examples/jsm/libs/stats.module";
 import { Conf } from "./conf";
@@ -55,7 +56,7 @@ export class Param {
 
   private _add(obj: any, folderName: string): void {
     const folder = this._dat.addFolder(folderName);
-    for (var key in obj) {
+    for (const key in obj) {
       const val: any = obj[key];
       if (val.use == undefined) {
         if (val.type == "color") {

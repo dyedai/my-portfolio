@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
 import { Rect } from "./rect";
 
 export class Resize {
@@ -63,7 +65,7 @@ export class Resize {
   }
 
   private _call = () => {
-    for (var item of this._list) {
+    for (const item of this._list) {
       if (item != null) item();
     }
   };

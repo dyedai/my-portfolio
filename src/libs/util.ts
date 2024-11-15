@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import device from "current-device";
 
 export class Util {
@@ -122,9 +124,9 @@ export class Util {
   shuffle(arr: Array<any>): void {
     let i = arr.length;
     while (--i) {
-      let j = Math.floor(Math.random() * (i + 1));
+      const j = Math.floor(Math.random() * (i + 1));
       if (i == j) continue;
-      let k = arr[i];
+      const k = arr[i];
       arr[i] = arr[j];
       arr[j] = k;
     }

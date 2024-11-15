@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Point } from "@/libs/point";
 import { Update } from "@/libs/update";
 import { Util } from "@/libs/util";

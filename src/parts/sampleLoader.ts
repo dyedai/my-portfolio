@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Rect } from "../libs/rect";
 import { Color } from "three/src/math/Color";
 import { Util } from "../libs/util";

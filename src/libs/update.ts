@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
 export class Update {
   private static _instance: Update;
 
@@ -37,7 +38,7 @@ export class Update {
   _update = () => {
     if (this.play) {
       this.cnt++;
-      for (var item of this._updateList) {
+      for (const item of this._updateList) {
         if (item != null) item();
       }
       window.requestAnimationFrame(this._update);

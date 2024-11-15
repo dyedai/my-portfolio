@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export class Display {
   opt: any;
   el: any;
@@ -65,7 +66,7 @@ export class Display {
   }
 
   getWidth(el: Element): number {
-    let val = document.defaultView?.getComputedStyle(el, null).width;
+    const val = document.defaultView?.getComputedStyle(el, null).width;
     return Number(val?.replace("px", ""));
   }
 
@@ -73,7 +74,7 @@ export class Display {
     if (el == null) {
       return 0;
     } else {
-      let val = document.defaultView?.getComputedStyle(el, null).height;
+      const val = document.defaultView?.getComputedStyle(el, null).height;
       return Number(val?.replace("px", ""));
     }
   }
@@ -101,13 +102,13 @@ export class Display {
 
   public getOffsetTop(el: Element): number {
     const rect = el.getBoundingClientRect();
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return rect.top + scrollTop;
   }
 
   public getOffset(el: Element): any {
     const rect = el.getBoundingClientRect();
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return {
       y: rect.top + scrollTop,
       x: rect.left,

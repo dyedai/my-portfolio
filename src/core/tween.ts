@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Power0, gsap } from "gsap";
 
 export class Tween {
@@ -12,13 +13,22 @@ export class Tween {
     return this._instance;
   }
 
-  a(target: any, param: any, duration: number = 1, delay: number = 0, easing: any = undefined, onStart: any = undefined, onUpdate: any = undefined, onComplete: any = undefined): void {
+  a(
+    target: any,
+    param: any,
+    duration: number = 1,
+    delay: number = 0,
+    easing: any = undefined,
+    onStart: any = undefined,
+    onUpdate: any = undefined,
+    onComplete: any = undefined
+  ): void {
     gsap.killTweensOf(target);
 
-    let from: any = {};
-    let to: any = {};
+    const from: any = {};
+    const to: any = {};
 
-    for (var key in param) {
+    for (const key in param) {
       const val = param[key];
       if (val[0] != undefined && val[0] != null) {
         from[key] = val[0];

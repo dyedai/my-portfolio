@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Point } from "@/libs/point";
 import { Update } from "@/libs/update";
 
@@ -38,7 +39,7 @@ export class Scroller {
     this.easeVal.y += (this.val.y - this.easeVal.y) * 0.1;
 
     const ease = 0.1;
-    let powerTg = this.old.y - this.val.y;
+    const powerTg = this.old.y - this.val.y;
     this.power.y += (powerTg - this.power.y) * ease;
 
     this.dist.y += (this.old.y - this.val.y - this.dist.y) * ease;

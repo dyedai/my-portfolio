@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Display } from "@/libs/display";
 import { Update } from "@/libs/update";
 import { Resize } from "@/libs/resize";
@@ -119,7 +120,7 @@ export class MyDisplay extends Display {
 
   css(el: any, obj: any): void {
     const style = el.style;
-    for (var key in obj) {
+    for (const key in obj) {
       style[key] = obj[key];
     }
   }
