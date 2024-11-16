@@ -5,6 +5,7 @@ import MatrixCode from "./MatrixCode";
 import { UnicodeProvider } from "./UnicodeContext";
 
 import "./globals.css";
+import "./glow.css";
 
 const dot = DotGothic16({
   display: "swap",

@@ -1,0 +1,53 @@
+/* 画像用のエフェクト */
+.glow {
+  display: inline-block;
+  border-radius: 50%; /* 円形の光 */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  animation: rainbow-glow 3s linear infinite; /* 虹色の光アニメーション */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow:hover {
+  transform: scale(1.2); /* ホバー時の拡大 */
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes rainbow-text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.rainbow-text {
+  animation: rainbow-text 3s linear infinite; /* 3秒で一周、無限ループ */
+}
+
+@keyframes rainbow-glow {
+  0% {
+    box-shadow: 0 0 15px rgb(255, 0, 0); /* 赤 */
+    filter: hue-rotate(0deg);
+  }
+  20% {
+    box-shadow: 0 0 15px rgb(255, 128, 0); /* オレンジ */
+    filter: hue-rotate(60deg);
+  }
+  40% {
+    box-shadow: 0 0 15px rgb(255, 255, 0); /* 黄色 */
+    filter: hue-rotate(120deg);
+  }
+  60% {
+    box-shadow: 0 0 15px rgb(0, 255, 0); /* 緑 */
+    filter: hue-rotate(180deg);
+  }
+  80% {
+    box-shadow: 0 0 15px rgb(0, 0, 255); /* 青 */
+    filter: hue-rotate(240deg);
+  }
+  100% {
+    box-shadow: 0 0 15px rgb(255, 0, 255); /* 紫 */
+    filter: hue-rotate(300deg);
+  }
+}

@@ -4,14 +4,19 @@ import React, { useEffect } from "react";
 import { useUnicode } from "../UnicodeContext";
 
 export default function SecretPage() {
-  const { UnicodeValue, setUnicodeValue, matrixColor, setMatrixColor } = useUnicode();
+  const { UnicodeValue, setUnicodeValue, matrixColor, setMatrixColor } =
+    useUnicode();
   const [inputValue, setInputValue] = React.useState(UnicodeValue.toString());
   const [colorValue, setColorValue] = React.useState(matrixColor);
   console.log("お。。。？");
 
   useEffect(() => {
     setInputValue(UnicodeValue.toString());
-    console.log("入力した値：" + UnicodeValue + " Unicode一覧表　https://ja.wikipedia.org/wiki/Unicode%E4%B8%80%E8%A6%A7%E8%A1%A8");
+    console.log(
+      "入力した値：" +
+        UnicodeValue +
+        " Unicode一覧表　https://ja.wikipedia.org/wiki/Unicode%E4%B8%80%E8%A6%A7%E8%A1%A8"
+    );
   }, [UnicodeValue]);
 
   const handleUnicodeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -30,11 +35,22 @@ export default function SecretPage() {
   };
 
   return (
-    <div className="text-center">
-      <input className="text-2xl border-none outline-none bg-transparent w-6" value={inputValue} onChange={handleUnicodeChange} />
-      <span className="sr-only">このinputタグに0d(Unicode)を打つと。。。？</span>
+    <div className="text-center rainbow-text">
+      <input
+        className="text-2xl border-none outline-none bg-transparent w-6"
+        value={inputValue}
+        onChange={handleUnicodeChange}
+      />
+      <span className="sr-only">
+        このinputタグに0d(Unicode)を打つと。。。？
+      </span>
       <a className="text-2xl">4 This page could not be found.</a>
-      <input type="color" className="bg-transparent" value={colorValue} onChange={handleColorChange} />
+      <input
+        type="color"
+        className="bg-transparent"
+        value={colorValue}
+        onChange={handleColorChange}
+      />
     </div>
   );
 }
