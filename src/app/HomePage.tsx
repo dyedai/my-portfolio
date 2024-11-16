@@ -48,7 +48,7 @@ export default function HomePage() {
         Select here↓ or Press Ctrl+A
       </span>
       <div className="l-main-wrapper hidden lg:flex">
-        <div className="inner hidden lg:block"></div>
+        <div className="inner hidden lg:flex"></div>
       </div>
     </div>
   );
