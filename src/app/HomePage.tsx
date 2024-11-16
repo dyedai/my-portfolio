@@ -8,6 +8,7 @@ import { HSL } from "@/libs/hsl";
 import { Contents } from "@/parts/contents";
 import "./style.css";
 import "./globals.css";
+import "./glow.css";
 
 export default function HomePage() {
   useEffect(() => {
@@ -39,15 +40,15 @@ export default function HomePage() {
 
   return (
     <div className="text-center">
-      <h1 className="lg:hidden font-dot text-5xl mb-4 lg:mb-0">
+      <h1 className="lg:hidden font-dot text-3xl mb-4 lg:mb-0">
         Welcome to My Website
       </h1>
       <p className="lg:hidden">This is the home page.</p>
-      <span className="hidden lg:inline-block lg:text-2xl animate-bounce">
+      <span className="hidden lg:inline-block lg:text-2xl animate-bounce rainbow-text">
         Select here or Press Ctrl+A ↓
       </span>
-      <div className="l-main-wrapper invisible lg:visible">
-        <div className="inner invisible lg:visible"></div>
+      <div className="l-main-wrapper hidden lg:flex">
+        <div className="inner hidden lg:block"></div>
       </div>
     </div>
   );

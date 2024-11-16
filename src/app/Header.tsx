@@ -18,10 +18,16 @@ const Header: React.FC = () => {
   }, [pathname]);
 
   return (
-    <nav className="relative top-0 left-0 w-full z-20">
+    <nav className="relative top-0 left-0 w-full z-20 rainbow-text">
       <div className="w-full flex flex-wrap items-center justify-between md:p-10">
-        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse" onClick={() => setIsOpen(false)}>
-          <span className="self-center text-3xl md:text-5xl font-semibold whitespace-nowrap text-white">&apos;DAI.DAI.FORIO&apos;</span>
+        <Link
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+          onClick={() => setIsOpen(false)}
+        >
+          <span className="self-center text-3xl md:text-5xl font-semibold whitespace-nowrap text-white">
+            &apos;DAI.DAI.FORIO&apos;
+          </span>
         </Link>
         <button
           onClick={toggleMenu}
@@ -30,22 +36,55 @@ const Header: React.FC = () => {
           aria-expanded={isOpen}
         >
           <span className="sr-only">Open main menu</span>
-          <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+          <svg
+            className="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
           </svg>
         </button>
-        <div className={`w-full md:block md:w-auto ${isOpen ? "block" : "hidden"}`} id="navbar-default">
+        <div
+          className={`w-full md:block md:w-auto ${isOpen ? "block" : "hidden"}`}
+          id="navbar-default"
+        >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 gap-5">
             {["HOME", "WORKS", "PROFILE", "CONTACT", "):"].map((item) => (
               <li key={item}>
                 <AnimatedLink
-                  href={item === "):" ? "/secret" : item === "HOME" ? "/" : `/${item.toLowerCase()}`}
+                  href={
+                    item === "):"
+                      ? "/secret"
+                      : item === "HOME"
+                      ? "/"
+                      : `/${item.toLowerCase()}`
+                  }
                   english={item}
-                  japanese={item === "):" ? ":)" : item === "HOME" ? "ホーム" : item === "WORKS" ? "作品" : item === "PROFILE" ? "経歴" : "連絡先"}
+                  japanese={
+                    item === "):"
+                      ? ":)"
+                      : item === "HOME"
+                      ? "ホーム"
+                      : item === "WORKS"
+                      ? "作品"
+                      : item === "PROFILE"
+                      ? "経歴"
+                      : "連絡先"
+                  }
                   className="c-txt line flex py-2 px-3 text-white transition duration-200"
                   onClick={() => setIsOpen(false)} // Close the menu when clicking on a link
                 >
-                  <span className="text-2xl font-semibold whitespace-nowrap text-white">{item}</span>
+                  <span className="text-2xl font-semibold whitespace-nowrap text-white">
+                    {item}
+                  </span>
                 </AnimatedLink>
               </li>
             ))}
