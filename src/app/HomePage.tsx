@@ -49,8 +49,8 @@ export default function HomePage() {
       <span className="hidden lg:inline-block lg:text-2xl animate-bounce">
         Select here↓ or Press Ctrl+A
       </span>
-      <div className="l-main-wrapper hidden lg:flex">
-        <div className="inner hidden lg:flex"></div>
+      <div className="l-main-wrapper">
+        <div className="inner"></div>
       </div>
     </div>
   );
