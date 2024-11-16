@@ -38,6 +38,8 @@ export default function HomePage() {
     }
   }, []);
 
+  //
+
   return (
     <div className="text-center">
       <h1 className="lg:hidden font-dot text-3xl mb-4 lg:mb-0">
