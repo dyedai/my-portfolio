@@ -5,20 +5,33 @@
 }
 
 .l-main-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: none; /* hidden */
+}
+
+@media (min-width: 1024px) {
+  .l-main-wrapper {
+    display: flex; /* lg:flex */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .inner {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: none; /* hidden */
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    display: flex; /* lg:flex */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .l-main-wrapper div {
