@@ -44,8 +44,8 @@ export default function HomePage() {
         Welcome to My Website
       </h1>
       <p className="lg:hidden">This is the home page.</p>
-      <span className="hidden lg:inline-block lg:text-2xl animate-bounce rainbow-text">
-        Select here or Press Ctrl+A ↓
+      <span className="hidden lg:inline-block lg:text-2xl animate-bounce">
+        Select here↓ or Press Ctrl+A
       </span>
       <div className="l-main-wrapper hidden lg:flex">
         <div className="inner hidden lg:block"></div>
