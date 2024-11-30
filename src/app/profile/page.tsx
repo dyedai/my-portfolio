@@ -96,22 +96,34 @@ export default function ProfilePage() {
           Skills
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
-          <SkillIcon img="/images/HTML5_Badge.svg" label="HTML/CSS" />
-          <SkillIcon img="/images/javascript-original.svg" label="JavaScript" />
-          <SkillIcon img="/images/typescript-original.svg" label="TypeScript" />
-          <SkillIcon img="/images/react-logo.svg" label="React" />
-          <SkillIcon img="/images/nextjs-original.svg" label="Next.js" />
+          <SkillIcon img="/images/skills/HTML5_Badge.svg" label="HTML/CSS" />
           <SkillIcon
-            img="/images/tailwindcss-original.svg"
+            img="/images/skills/javascript-original.svg"
+            label="JavaScript"
+          />
+          <SkillIcon
+            img="/images/skills/typescript-original.svg"
+            label="TypeScript"
+          />
+          <SkillIcon img="/images/skills/react-logo.svg" label="React" />
+          <SkillIcon img="/images/skills/nextjs-original.svg" label="Next.js" />
+          <SkillIcon
+            img="/images/skills/tailwindcss-original.svg"
             label="Tailwidcss"
           />
-          <SkillIcon img="/images/nodejs-original.svg" label="Node.js" />
-          <SkillIcon img="/images/linux-original.svg" label="Linux" />
-          <SkillIcon img="/images/c-original.svg" label="C" />
-          <SkillIcon img="/images/java-original.svg" label="Java" />
-          <SkillIcon img="/images/Logomark_Full Color.png" label="Firebase" />
-          <SkillIcon img="/images/figma-original.svg" label="Figma" />
-          <SkillIcon img="/images/blender-original.svg" label="Blender" />
+          <SkillIcon img="/images/skills/nodejs-original.svg" label="Node.js" />
+          <SkillIcon img="/images/skills/linux-original.svg" label="Linux" />
+          <SkillIcon img="/images/skills/c-original.svg" label="C" />
+          <SkillIcon img="/images/skills/java-original.svg" label="Java" />
+          <SkillIcon
+            img="/images/skills/Logomark_Full Color.png"
+            label="Firebase"
+          />
+          <SkillIcon img="/images/skills/figma-original.svg" label="Figma" />
+          <SkillIcon
+            img="/images/skills/blender-original.svg"
+            label="Blender"
+          />
         </div>
       </div>
     </div>
