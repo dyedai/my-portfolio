@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "../../glow.css";
+import "../../../glow.css";
 
 export default function ReceiptbatllePage() {
   console.log("隠し要素はどこかな？？");
