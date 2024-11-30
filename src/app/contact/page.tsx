@@ -11,7 +11,7 @@ export default function ContactPage() {
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <div className="">
             <Image
-              src="/images/logo-white.png"
+              src="/images/sns/logo-white.png"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -21,25 +21,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
-              alt="x-logo-white"
-              width={100}
-              height={100}
-            />
-          </div>
-        </Link>
-        <Link href={"https://twitter.com/___daidai__"} target="_blank">
-          <Image
-            src="/images/logo-white.png"
-            alt="x-logo-white"
-            width={100}
-            height={100}
-          />
-        </Link>
-        <Link href={"https://github.com/dyedai"} target="_blank">
-          <div className="glow">
-            <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -48,7 +30,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -57,7 +39,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -66,7 +48,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -75,7 +57,25 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
+              alt="x-logo-white"
+              width={100}
+              height={100}
+            />
+          </div>
+        </Link>
+        <Link href={"https://twitter.com/___daidai__"} target="_blank">
+          <Image
+            src="/images/sns/logo-white.png"
+            alt="x-logo-white"
+            width={100}
+            height={100}
+          />
+        </Link>
+        <Link href={"https://github.com/dyedai"} target="_blank">
+          <div className="glow">
+            <Image
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -86,7 +86,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -95,7 +95,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -104,7 +104,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -113,7 +113,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -122,7 +122,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -131,7 +131,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -140,7 +140,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -149,7 +149,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -157,7 +157,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -166,7 +166,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -175,7 +175,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -184,7 +184,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -193,7 +193,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -202,7 +202,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -211,7 +211,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -220,7 +220,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -231,7 +231,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -240,7 +240,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -249,7 +249,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -258,7 +258,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -267,7 +267,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -276,7 +276,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -285,7 +285,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -294,7 +294,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -302,7 +302,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -311,7 +311,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -320,7 +320,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -329,7 +329,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -338,7 +338,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -347,7 +347,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
@@ -356,7 +356,7 @@ export default function ContactPage() {
         </Link>
         <Link href={"https://twitter.com/___daidai__"} target="_blank">
           <Image
-            src="/images/logo-white.png"
+            src="/images/sns/logo-white.png"
             alt="x-logo-white"
             width={100}
             height={100}
@@ -365,7 +365,7 @@ export default function ContactPage() {
         <Link href={"https://github.com/dyedai"} target="_blank">
           <div className="glow">
             <Image
-              src="/images/github-mark-white.svg"
+              src="/images/sns/github-mark-white.svg"
               alt="x-logo-white"
               width={100}
               height={100}
