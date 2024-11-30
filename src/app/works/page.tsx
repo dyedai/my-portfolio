@@ -8,22 +8,22 @@ export default function WorksPage() {
   const WebProjects = [
     {
       title: "):スレッドアプリ:(",
-      thumbnail: "/images/threads.png",
+      thumbnail: "/images/threads/threadshome.png",
       link: "threads",
     },
     {
       title: "):書籍レビューアプリ:(",
-      thumbnail: "/images/bookreview.png",
+      thumbnail: "/images/bookreview/bookreview.png",
       link: "bookreview",
     },
     {
       title: "):レシートバトルアプリ:(",
-      thumbnail: "/images/receptBattle.png",
+      thumbnail: "/images/receiptbattle/receptBattle.png",
       link: "receiptbattle",
     },
     {
       title: "):塾の予定管理アプリ:(",
-      thumbnail: "/images/juku.png",
+      thumbnail: "/images/manageclass/juku.png",
       link: "manageclass",
     },
     {
@@ -69,7 +69,7 @@ export default function WorksPage() {
   const GameProjects = [
     {
       title: "comming soon...",
-      thumbnail: "/images/noise.gif",
+      thumbnail: "/images/comingsoon/noise.gif",
       link: "comingsoon",
     },
   ];
@@ -77,7 +77,7 @@ export default function WorksPage() {
   const CGProjects = [
     {
       title: "comming soon...",
-      thumbnail: "/images/noise.gif",
+      thumbnail: "/images/comingsoon/noise.gif",
       link: "comingsoon",
     },
   ];
