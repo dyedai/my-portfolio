@@ -47,7 +47,7 @@ export default function HomePage() {
       </h1>
       <p className="lg:hidden">This is the home page.</p>
       <span className="hidden lg:inline-block lg:text-2xl animate-bounce">
-        Select here↓ or Press Ctrl+A
+        Select here↓ or Ctrl + A
       </span>
       <div className="l-main-wrapper">
         <div className="inner"></div>
