@@ -40,7 +40,8 @@ export default function ReceiptbatllePage() {
             game that can be enjoyed with friends and other users.
           </p>
           <p className="mx-2 my-4">
-            仕様技術：Next.js, Prettier, Eslint, java, Figma
+            仕様技術：Next.js, Typescript, TailwindCSS, Prettier, Eslint, java,
+            websocket, devbox, Postgres Figma
           </p>
           <a
             className="underline  text-blue-600 mx-2 text-2xl"
@@ -95,7 +96,30 @@ export default function ReceiptbatllePage() {
               width={2400}
               height={1600}
             />
-            {/* <video src="/images/receiptbattle/gatya.mp4" controls autoPlay loop playsInline className="w-full h-auto" width="2400" height="1600" /> */}
+            <Image
+              src="/images/shiritorisugoroku/game.png"
+              alt="game"
+              className="w-full h-auto"
+              width={2400}
+              height={1600}
+            />
+            <Image
+              src="/images/shiritorisugoroku/rouret.png"
+              alt="rouret"
+              className="w-full h-auto"
+              width={2400}
+              height={1600}
+            />
+            <video
+              src="/images/shiritorisugoroku/demo.mp4"
+              controls
+              autoPlay
+              loop
+              playsInline
+              className="w-full h-auto"
+              width="2400"
+              height="1600"
+            />
           </div>
         </div>
       </div>
