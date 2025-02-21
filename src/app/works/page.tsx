@@ -68,9 +68,9 @@ export default function WorksPage() {
 
   const GameProjects = [
     {
-      title: "comming soon...",
-      thumbnail: "/images/noise.gif",
-      link: "comingsoon",
+      title: "Ctrl+G",
+      thumbnail: "/images/ctrlg/game6.png",
+      link: "ctrlg",
     },
   ];
 
