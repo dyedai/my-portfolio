@@ -10,14 +10,12 @@ export default function ContactPage() {
       <div className="flex justify-center items-center">
         <div className="flex gap-20">
           <Link href={"https://twitter.com/dyedaii"} target="_blank">
-            <div className="glow">
-              <Image
-                src="/images/sns/logo-white.png"
-                alt="x-logo-white"
-                width={100}
-                height={100}
-              />
-            </div>
+            <Image
+              src="/images/sns/logo-white.png"
+              alt="x-logo-white"
+              width={100}
+              height={100}
+            />
           </Link>
           <Link href={"https://github.com/dyedai"} target="_blank">
             <div className="glow">
@@ -30,14 +28,12 @@ export default function ContactPage() {
             </div>
           </Link>
           <Link href={"https://twitter.com/dyedaii"} target="_blank">
-            <div className="glow">
-              <Image
-                src="/images/sns/logo-white.png"
-                alt="x-logo-white"
-                width={100}
-                height={100}
-              />
-            </div>
+            <Image
+              src="/images/sns/logo-white.png"
+              alt="x-logo-white"
+              width={100}
+              height={100}
+            />
           </Link>
         </div>
       </div>
