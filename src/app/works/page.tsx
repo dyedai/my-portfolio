@@ -84,7 +84,7 @@ export default function WorksPage() {
 
   return (
     <div className="flex-col">
-      <h2 className="text-3xl mb-6 px-6 lg:px-0 lg:text-4xl rainbow-text pt-20">
+      <h2 className="text-3xl mb-6 px-6 lg:px-4 lg:text-4xl rainbow-text pt-20">
         &lt;WebApp/&gt;
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 p-4 pb-10">
@@ -109,31 +109,30 @@ export default function WorksPage() {
 
       <hr className="w-11/12 mx-auto" />
 
-      <h2 className="text-3xl mb-6 px-6 lg:px-0 lg:text-4xl rainbow-text pt-10">
-        &lt;AI:Art/&gt;
+      <h2 className="text-3xl mb-6 px-6 lg:px-4 lg:text-4xl rainbow-text pt-10">
+        &lt;Game/&gt;
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 p-4 pb-10">
-        {AIProjects.map((AIProject) => (
+        {GameProjects.map((GameProject) => (
           <Link
-            key={AIProject.link}
-            href={`/works/ai/${AIProject.link}`}
+            key={GameProject.link}
+            href={`/works/game/${GameProject.link}`}
             rel="noopener noreferrer"
             className="relative group block overflow-hidden transition-transform transform hover:scale-125 hover:z-100"
           >
             <Image
-              src={AIProject.thumbnail}
-              alt={AIProject.title}
+              src={GameProject.thumbnail}
+              alt={GameProject.title}
               width={2400}
               height={1600}
-              className="w-full h-full object-cover"
+              className="w-full h-60 object-cover"
             />
+            <p className="font-dot text-xl mb-4">{GameProject.title}</p>
           </Link>
         ))}
       </div>
 
-      <hr className="w-11/12 mx-auto" />
-
-      <h2 className="text-3xl mb-6 px-6 lg:px-0 lg:text-4xl rainbow-text pt-10">
+      <h2 className="text-3xl mb-6 px-6 lg:px-4 lg:text-4xl rainbow-text pt-10">
         &lt;CG:Art/&gt;
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 p-4 pb-10">
@@ -158,28 +157,29 @@ export default function WorksPage() {
 
       <hr className="w-11/12 mx-auto" />
 
-      <h2 className="text-3xl mb-6 px-6 lg:px-0 lg:text-4xl rainbow-text pt-10">
-        &lt;Game/&gt;
+      <h2 className="text-3xl mb-6 px-6 lg:px-4 lg:text-4xl rainbow-text pt-10">
+        &lt;AI:Art/&gt;
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 p-4 pb-10">
-        {GameProjects.map((GameProject) => (
+        {AIProjects.map((AIProject) => (
           <Link
-            key={GameProject.link}
-            href={`/works/game/${GameProject.link}`}
+            key={AIProject.link}
+            href={`/works/ai/${AIProject.link}`}
             rel="noopener noreferrer"
             className="relative group block overflow-hidden transition-transform transform hover:scale-125 hover:z-100"
           >
             <Image
-              src={GameProject.thumbnail}
-              alt={GameProject.title}
+              src={AIProject.thumbnail}
+              alt={AIProject.title}
               width={2400}
               height={1600}
-              className="w-full h-60 object-cover"
+              className="w-full h-full object-cover"
             />
-            <p className="font-dot text-xl mb-4">{GameProject.title}</p>
           </Link>
         ))}
       </div>
+
+      <hr className="w-11/12 mx-auto" />
     </div>
   );
 }
