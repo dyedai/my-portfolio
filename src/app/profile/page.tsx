@@ -73,7 +73,7 @@ export default function ProfilePage() {
           <p>
             <span className="whitespace-nowrap">せいべつ：おとこ</span>
             <br />
-            <span className="">うまれ：２００３(Ｈ１５)/５/２４</span>
+            <span className="">うまれ：２００３/５/２４</span>
             <br />
             <span className="whitespace-nowrap">
               出身：とうきょう/ひがしやまと
