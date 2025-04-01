@@ -23,7 +23,7 @@ export default function ProfilePage() {
       <div className="px-6 py-8 text-center">
         <p className="text-5xl font-bold md:text-9xl rainbow-text">DaiDai</p>
         <span className="mt-2 text-lg rainbow-text">Daiki Kakimi</span>
-        <p className="text-lg mt-2 rainbow-text">Web Engineer / Designer?</p>
+        <p className="text-lg mt-2 rainbow-text">Engineer / Designer?</p>
       </div>
       <hr className="w-7/12 mx-auto" />
 
@@ -32,7 +32,8 @@ export default function ProfilePage() {
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p>
             <span className="md:whitespace-nowrap">
-              芝浦工業大学 システム理工学部 電子情報システム学科所属　学部３年
+              芝浦工業大学 システム理工学部 電子情報システム学科 (Interactive
+              Media Lab)
             </span>
             <br />
             <span className="md:whitespace-nowrap">TechNova所属(運営)</span>
@@ -96,7 +97,8 @@ export default function ProfilePage() {
           Skills
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
-          <SkillIcon img="/images/skills/HTML5_Badge.svg" label="HTML/CSS" />
+          <SkillIcon img="/images/skills/HTML5_Badge.svg" label="HTML" />
+          <SkillIcon img="/images/skills/css3-original.svg" label="CSS" />
           <SkillIcon
             img="/images/skills/javascript-original.svg"
             label="JavaScript"
@@ -114,6 +116,7 @@ export default function ProfilePage() {
           <SkillIcon img="/images/skills/nodejs-original.svg" label="Node.js" />
           <SkillIcon img="/images/skills/linux-original.svg" label="Linux" />
           <SkillIcon img="/images/skills/c-original.svg" label="C" />
+          <SkillIcon img="/images/skills/csharp-original.svg" label="C#" />
           <SkillIcon img="/images/skills/java-original.svg" label="Java" />
           <SkillIcon
             img="/images/skills/Logomark_Full Color.png"
@@ -124,6 +127,7 @@ export default function ProfilePage() {
             img="/images/skills/blender-original.svg"
             label="Blender"
           />
+          <SkillIcon img="/images/skills/unity-original.svg" label="Unity" />
         </div>
       </div>
     </div>
