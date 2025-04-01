@@ -27,10 +27,10 @@ export default function ContactPage() {
               />
             </div>
           </Link>
-          <Link href={"https://twitter.com/dyedaii"} target="_blank">
+          <Link href={"https://www.instagram.com/daitreee/"} target="_blank">
             <Image
-              src="/images/sns/logo-white.png"
-              alt="x-logo-white"
+              src="/images/sns/Instagram_Glyph_White.png"
+              alt="insta-logo-white"
               width={100}
               height={100}
             />

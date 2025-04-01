@@ -7,10 +7,10 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.glow:hover {
-  transform: scale(1.2); /* ホバー時の拡大 */
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
-}
+/* .glow:hover { */
+/* transform: scale(1.2); ホバー時の拡大 */
+/* box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); */
+/* } */
 
 @keyframes rainbow-text {
   0% {
